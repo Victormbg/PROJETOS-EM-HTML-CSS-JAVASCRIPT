@@ -1,0 +1,266 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SEITT</title>
+<link rel="stylesheet" type="text/css" href="css/estilo2.css"/>
+<script src="../js/jquery.min.js" type="text/javascript"></script>
+<script src="../js/jquery.validate.js" type="text/javascript"></script>
+<link href="../css/validate.css" type="text/css" media="screen" rel="stylesheet" />
+<script>
+ function mascara_tel (objeto) {
+	if(objeto.value.length == 0){
+		objeto.value = objeto.value + '(';
+	}
+if(objeto.value.length == 3){
+	objeto.value = objeto.value + ')';
+}	
+	
+if(objeto.value.length == 8){
+	objeto.value = objeto.value +'-';
+}		
+		
+}
+		
+	function mascara_cel (objeto) {
+	if(objeto.value.length == 0){
+		objeto.value = objeto.value + '(';
+	}
+if(objeto.value.length == 3){
+	objeto.value = objeto.value + ')';
+}	
+	
+if(objeto.value.length == 8){
+	objeto.value = objeto.value +'-';
+}		
+		
+}
+	function mascara_RG (objeto) {
+	if(objeto.value.length == 2){
+		objeto.value = objeto.value + '.';
+	}
+if(objeto.value.length == 6){
+	objeto.value = objeto.value + '.';
+}	
+	
+if(objeto.value.length == 10){
+	objeto.value = objeto.value +'-';
+}		
+		
+}
+	
+	
+	function mascara_cpf (objeto) {
+	if(objeto.value.length == 3){
+		objeto.value = objeto.value + '.';
+	}
+if(objeto.value.length == 7){
+	objeto.value = objeto.value + '.';
+}	
+	
+if(objeto.value.length == 11){
+	objeto.value = objeto.value +'-';
+}		
+		
+}
+
+	
+function mascara_data (objeto){
+	if(objeto.value.length == 2){
+		objeto.value = objeto.value + '/';
+	}
+  if(objeto.value.length == 5){
+	  objeto.value = objeto.value + '/';
+  }	
+}
+
+	
+		function funcao6() {
+		var x1 = document.getElementById('opcao').value;
+		alert(x1);
+		
+	}
+function funcao7() {
+		var y1 = document.getElementById('op').value;
+		alert(y1);
+		
+	}
+</script>
+</head>
+<body>
+<nav class="menu">
+	<ul>
+			<li><a href="index.html">Pagina inicial</a></li> 
+			<li><a href="internet.html">PLANOS INTERNET</a></li>
+			<li><a href="televisao.html">PLANOS TV</a></li>
+			<li><a href="fixo.html">PLANOS FIXO</a></li>
+			<li><a href="fale_conosco.html">Fale Conosco</a></li>
+	</ul>
+</nav>
+
+<div class="banner">
+	<h1>Fale Conosco</h1>
+</div>
+
+<div class="linha"></div>
+
+<div class="conteudo">
+<h1>Fale Conosco</h1>
+<p>
+<label>Nome:</label>
+
+<input type="text" name="nome" id="nome" class="required" minlength="5" />
+
+</p>
+
+<p>
+ <label>Data Nascimento:</label>
+ <input type="text" name="data" id="data" class="required data" maxlength="10" />
+</p>
+<br>
+<label for="cpf">CPF:</label><input type="text" name="cpf" onKeyPress="mascara_cpf(this)" onKeyDown="return somente_numero(event)" size="9" maxlength="14" placeholder="999.999.999-99" />
+<br>
+<label for="rg">RG:</label><input type="text" name="RG" onKeyPress="mascara_RG(this)" onKeyDown="return somente_numero(event)" size="9" maxlength="13" placeholder="99.999.999-9" />
+<br>
+ <label for="tel">Informe o Telefone:</label><input type="text" name="tel" onKeyPress="mascara_tel(this)" onKeyDown="return somente_numero(event)" size="9" maxlength="13" placeholder="(99)9999-9999"/>
+<br>
+<label for="email">Digite o seu email:</label><input type="text" name="email" size="50" /> 
+<br>
+ <label for="endereço">Endereço:</label>
+ <input type="text" name="endereço" id="end" class="required" minlength="5" />
+ <p>
+
+ <label>Estado:</label>
+
+ <select name="estado" id="est" class="required">
+
+ <option value="">Selecione</option>
+
+ <option value="0">AC</option>
+ <option value="2">AL</option>
+ <option value="3">AM</option>
+ <option value="4">AP</option>
+ <option value="5">BA</option>
+ <option value="6">CE</option>
+<option value="7">DF</option>
+<option value="8">ES</option>
+<option value="9">GO</option>
+<option value="10">MA</option>
+<option value="11">MG</option>
+<option value="12">MS</option>
+<option value="13">MT</option>
+<option value="14">PA</option>
+<option value="15">PB</option>
+<option value="16">PE</option>
+<option value="17">PI</option>
+<option value="18">PR</option>
+<option value="19">RJ</option>
+<option value="20">RN</option>
+<option value="21">RO</option>
+<option value="22">RR</option>
+<option value="23">RS</option>
+<option value="24">SC</option>
+<option value="25">SE</option>
+<option value="26">SP</option>
+<option value="27">TO</option>
+ </select>
+	 </p>
+<textarea rows="3" cols="20" name="comentario"></textarea>
+<br>
+<label for="tel">Informe o Telefone:</label><input type="text" name="tel" onKeyPress="mascara_tel(this)" onKeyDown="return somente_numero(event)" size="9" maxlength="13" placeholder="(99)9999-9999"/>
+<br>
+<label for="cel">Celular:</label><input type="text" name="cel" onKeyPress="mascara_cel(this)" onKeyDown="return somente_numero(event)" size="9" maxlength="13" placeholder="(99)9999-9999"/>
+<br>
+<label>Senha - Mínimo 4 caracteres</label>
+<input type="password" name="password" id="password" class="required password" minlength="4" />
+<br>
+<label>Repetir Senha </label>
+<input type="password" name="rpassword" id="rpassword" class="required password" minlength="4" />
+
+ <div id="wrap">
+
+<form id="f1" class="validate" action="" method="post" >
+
+ <p>
+
+ <label>Produto:</label>
+
+ <select name="combo" class="required">
+
+ <option value="">Selecione</option>
+
+ <option value="0">Internet Fixa</option>
+ <option value="1">Televisão</option>
+ <option value="1">Telefone Fixo</option>
+
+ </select>
+
+ 
+
+ </p>
+ 
+ <label>Categoria:</label>
+
+ <select name="combo" id="cb" class="required">
+
+ <option value="">Selecione</option>
+
+ <option value="0">reclamação</option>
+ <option value="1">Sugestões</option>
+ <option value="2">Elogios</option>
+ <option value="3">Solicitações</option>
+
+ </select>
+
+
+</form>
+
+ </div>
+ <br>
+ Mensagem: <br>
+				<textarea name="mensagem" id="" cols="30" rows="10"></textarea> <br>
+				<input type="checkbox"  name="confirmar" value="conf">Li e aceito as condições acima<br> 
+				<input type="submit" value="Enviar">
+				<input type="submit" value="Limpar">
+				
+</div>
+
+<footer class="rodape">
+			<div class="rodape-esq">
+				
+				<div class="linha"></div>
+				<ul>
+					<li><a href="index.html">Pagina Inicial</a></li>
+					<li><a href="fale_conosco.html">Fale Conosco</a></li>
+				</ul>
+				
+				<div class="linha"></div>
+				<ul>
+					<li><a href="#">Planos de Internet</a></li>
+					<li><a href="#">Planos para Fixo</a></li>
+					<li><a href="#">Planos para Televisão</a></li>
+				</ul>
+			</div>
+			<div class="rodape-center">
+				
+				<div class="linha"></div>
+				<ul>
+					<li>Rio de Janeiro - RJ</li>
+					<li>Rua Praça Quinze de Novembro, n 20</li>
+					<li>SEITT</li>
+					<li>Cep: 20010-010</li>
+				</ul>
+				
+				<div class="linha"></div>
+				<ul>
+					<li>Telefones: (21) 2566-5585 | (21) 5255-9855</li>
+					<li>Email: seitt@gmail.com</li>
+				</ul>
+				<img src="img/anatel-logo.png">
+			</div>
+			<div class="rodape-dir">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14701.206343636015!2d-43.1742946!3d-22.9022445!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf20bf329199d7ba3!2sANATEL+Rio-Ag%C3%AAncia+Nacional+de+Telecomunica%C3%A7%C3%B5es!5e0!3m2!1spt-BR!2sbr!4v1512508859390" width="640" height="260" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>	
+	</footer>
+</body>
+</html>

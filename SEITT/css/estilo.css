@@ -1,0 +1,136 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	font-family:Stencil Std, fantasy;
+}
+html,body{
+	height: 100%;
+}
+section{
+	min-height: 100%;
+}
+
+.menu{
+	background-color:rgba(56,118,244,1.00);
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+	
+}
+
+.banner{
+	/*background: url(../img/3.jpg) center center no-repeat fixed ;
+	background-size:cover;*/ padding-top:60px;
+	height: 600px; text-shadow: 2px 2px 5px #333
+	}
+
+
+.banner h1{text-align: center ; color: white; font-size: 240px; padding: 100px;font-family: Blippo, fantasy;}
+
+.banner h2{text-align: center ; color: white; font-size: 60px; padding: 10px;font-family: Blippo, fantasy;}
+
+.conteudo{
+	background:rgba(255,255,255,1.00);
+	background-size: cover;
+	height: 1200px;
+}
+
+.menu ul li {display: inline; padding: 65px;}
+
+.menu ul li a {
+	color: black;
+	font-size:30px;
+	text-decoration: none;
+	text-shadow: 2px 2px 2px #000;
+}
+.menu ul li a:hover{
+ color: darkorange;
+}
+.menu ul {padding: 0px;}
+
+#planos{
+	font-size: 30px;
+}
+.menu-topo {
+	text-align: center;
+}
+.menu-topo a {
+	padding: 15px;
+	border: 5px solid orange;
+	color: orange;	
+	font-size:30px;
+}
+.icone p1 {
+	color: orange;
+	font-size:30px;
+}
+
+.rodape{background-color: black;
+	overflow: auto;
+}
+.rodape-esq, .rodape-center,.rodape-dir {float: left; margin: 3px;background-color: black;}
+
+.rodape-esq{ width: 620px;}
+.rodape-esq ul li { padding: 5px;}
+.rodape-esq a{ text-decoration: none; color: #fff;}
+
+.rodape-center{ width: 620px;}
+.rodape-center img{ 
+height: 50px;
+}
+.rodape-center ul li { padding: 5px; color: #fff;}
+
+.propagandas {
+	width: 1500px;
+	margin: auto;
+	overflow: auto;
+	margin-bottom:100px;
+}
+.propaganda-dir img{
+	/*
+	padding: 100px;
+	height: 140px;
+	*/
+	float: right;
+}
+
+.propaganda-esq img{
+	/*
+	padding: 100px;
+	height: 140px;
+	*/
+	float: left;
+}
+
+table, th, td {
+    border: 5px solid rgba(172,78,252,1.00);
+	border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+}
+
+.linha{ border: none; border-top: dotted 1px rgba(0,0,0,1.00); width: 100%;}
+
+.img1{
+	text-align: center;
+	padding-top: 60px;
+}
+.img2{
+	text-align: center;
+	padding-top: 100px;
+}
+.img3{
+	padding:60px; 
+	padding-left:70px; 
+	float:left;
+}
+.img4{
+	padding:60px;
+	padding-right:70px; 
+	float:right;
+}
+

@@ -1,0 +1,176 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	font-family: calibri;
+}
+html,body{
+	height: 100%;
+}
+section{
+	min-height: 100%;
+}
+
+.menu{
+	background-color:rgba(56,118,244,1.00);
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+	
+}
+
+.banner{
+	background: url(../img/3.jpg) center center no-repeat fixed ;
+	background-size:cover; padding-top:60px;
+	height: 600px; text-shadow: 2px 2px 5px #333
+	}
+
+
+.banner h1{text-align: center ; color: white; font-size: 240px; padding: 100px;font-family: Blippo, fantasy;}
+
+.conteudo{
+	background:color rgba(255,253,253,1.00) center center;
+	background-size: cover;
+}
+
+.menu ul li {display: inline; padding: 65px;}
+
+.menu ul li a {
+	color: black;
+	font-size:30px;
+	text-decoration: none;
+	text-shadow: 2px 2px 2px #000;
+}
+.menu ul li a:hover{
+ color: darkorange;
+}
+.menu ul {padding: 0px;}
+
+
+.rodape{background-color: black;
+	overflow: auto;
+}
+.rodape-esq, .rodape-center,.rodape-dir {float: left; margin: 3px;background-color: black;}
+
+.rodape-esq{ width: 620px;}
+.rodape-esq ul li { padding: 5px;}
+.rodape-esq a{ text-decoration: none; color: #fff;}
+
+.rodape-center{ width: 620px;}
+.rodape-center img{ 
+height: 50px;
+}
+.rodape-center ul li { padding: 5px; color: #fff;}
+
+.linha{ border: none; border-top: dotted 1px rgba(0,0,0,1.00); width: 100%;}
+
+.topo{
+text-align: center;
+}
+.topo h1{
+font-size: 40px;	
+}
+
+.planos{
+	padding: 30px;
+}
+
+.plano1{
+    width: 300px;
+    height: 140px;
+    background-color: blue;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 15s infinite;
+}
+
+.plano1 h1,h2{
+	font-size:20px;   
+	text-align: center;
+}
+.plano1 h3{
+	padding: 8px;
+	font-size:35px;
+	text-align: center;
+}
+.botao1{
+	background-color: yellow;
+}
+.plano2{
+    width: 300px;
+    height: 140px;
+    background-color: blue;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 15s infinite;
+}
+
+.plano2 h1,h2{
+	font-size:20px;   
+	text-align: center;
+}
+.plano2 h3{
+	padding: 8px;
+	font-size:35px;
+	text-align: center;
+}
+.botao2{
+	background-color: yellow;
+}
+.plano3{
+    width: 300px;
+    height: 140px;
+    background-color: blue;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 15s infinite;
+}
+
+.plano3 h1,h2{
+	font-size:20px;   
+	text-align: center;
+}
+.plano3 h3{
+	padding: 8px;
+	font-size:35px;
+	text-align: center;
+}
+.botao3{
+	background-color: yellow;
+}
+.plano4{
+    width: 300px;
+    height: 140px;
+    background-color: blue;
+	transition:0.5s;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 15s infinite;
+}
+
+.plano4 h1,h2{
+	font-size:20px;   
+	text-align: center;
+}
+.plano4 h3{
+	padding: 10px;
+	font-size:35px;
+	text-align: center;
+}
+.botao4{
+	background-color: yellow;
+}
+#div1 {animation-timing-function: ease;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 500px;}
+}
+
+
+

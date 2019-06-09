@@ -1,0 +1,55 @@
+<h2>COMBO TV + INTERNET:</h2>
+<br>
+<br>
+<p>15 mega de velocidade + TV HD 150 canais + WI-FI Gratis por R$150,00</p> 
+<br>
+<br>
+<p>15 mega de velocidade+TV HD 150 canais+WI-FI GratisporR$150,00</p> 
+<br>
+<br>
+<p>15 mega de velocidade + TV HD 70 canais + Telefone ilimitado por R$120,00</p> 
+<br>
+<br>
+<p>10 mega de velocidade + TV HD 45 canais + telefone ilimitadoporR$90,00</p> 
+<br>
+<br>
+<br>
+
+
+/2
+
+<section class="conteudo">
+<div class="menu-topo">
+<br>
+<br>
+<a>Planos De Internet</a> <a>Combos TV + Internet</a> <a>Planos Telefone Fixo</a> <a>Pacotes de TV</a>
+<br>
+<br>
+<br>	
+</div>
+<div class="linha"></div>
+
+<table style="width:100%">
+  
+  <tr>
+    <td>10 megas de velocidade com Wi-Fi incluido</td>
+    <td>TV Digital com 45 canais</td>
+    <td>R$ 90,00</td>
+  </tr>
+  <tr>
+    <td>15 megas de velocidade com Wi-Fi incluido</td>
+    <td>TV HD 45 canais + 20 canais HD</td>
+    <td>R$ 90,00</td>
+  </tr>
+  <tr>
+    <td>35 megas de velocidade com Wi-Fi incluido</td>
+    <td>TV HD 100 canais</td>
+    <td>R$ 120,00</td>
+  </tr>
+    <tr>
+    <td>50 megas de velocidade com Wi-Fi incluido</td>
+    <td>TV HD 200 canais</td>
+    <td>R$ 190,00</td>
+  </tr>
+</table>
+
